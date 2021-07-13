@@ -2,8 +2,6 @@ import React from "react";
 
 import Task from "./Task";
 
-import { useState } from "react";
-
 function Tasks({ tasks }) {
   return (
     <>
