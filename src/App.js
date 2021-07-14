@@ -1,11 +1,11 @@
 import Header from "./component/Header.jsx"
 import css from "./index.css"
-import Tasks from "./component/Tasks";
+import Tasks from "./component/Tasks"
 
-import { useState } from "react";
+import { useState } from "react"
 
 function App() {
-const [tasks, setTasks] = useState([
+  const [tasks, setTasks] = useState([
     {
       id: 1,
       text: "first todo",
@@ -24,13 +24,13 @@ const [tasks, setTasks] = useState([
       day: "12th july 2021",
       reminder: true,
     },
-  ]);
-  
-  return ( 
+  ])
+
+  return (
     <div>
-  <Header title='Task Tracker' taskNumber='5'/>
-   <Tasks tasks={tasks}/>
-  </div>
+      <Header title='Task Tracker' taskNumber='5' />
+      <Tasks tasks={tasks} />
+    </div>
   )
 }
 
