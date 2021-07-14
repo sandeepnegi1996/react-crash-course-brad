@@ -1,16 +1,16 @@
-import React from "react";
-import { FaTimes } from "react-icons/fa";
+import React from "react"
+import { FaTimes } from "react-icons/fa"
 
-function Task({ key, text, day }) {
+function Task({ task, OnDelete }) {
   return (
-    <div className="task">
+    <div className='task'>
       <h3>
-        {text}
-        <FaTimes />
+        {task.text}
+        <FaTimes color='red' size='50' onClick={() => OnDelete(task.id)} />
       </h3>
-      <p>{day}</p>
+      <p>{task.day}</p>
     </div>
-  );
+  )
 }
 
-export default Task;
+export default Task
