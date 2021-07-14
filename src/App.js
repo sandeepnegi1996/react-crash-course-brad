@@ -3,6 +3,7 @@ import css from "./index.css"
 import Tasks from "./component/Tasks";
 
 import { useState } from "react";
+import Profile from "./component/profile/Profile.jsx";
 
 function App() {
 const [tasks, setTasks] = useState([
@@ -30,6 +31,7 @@ const [tasks, setTasks] = useState([
     <div>
   <Header title='Task Tracker' taskNumber='5'/>
    <Tasks tasks={tasks}/>
+   <Profile />
   </div>
   )
 }

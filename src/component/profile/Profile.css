@@ -1,0 +1,30 @@
+.profilepicparentdiv {
+  border: 2px solid grey;
+  width: 800px;
+}
+
+.profileDiv {
+  width: 937px;
+  height: 112px;
+}
+
+img {
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  height: 50px;
+  width: 50px;
+}
+#name {
+  position: relative;
+  left: 20px;
+}
+.followbtn {
+  position: relative;
+  left: 50%;
+}
+
+.Rating {
+  position: relative;
+  left: 80px;
+  top: -20px;
+}
