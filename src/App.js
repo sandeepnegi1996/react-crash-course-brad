@@ -1,5 +1,5 @@
 import Header from "./component/Header.jsx"
-import css from "./index.css"
+import  "./index.css"
 import Tasks from "./component/Tasks"
 
 import { useState } from "react"
@@ -33,10 +33,15 @@ function App() {
      console.log("Task is deleted ",id)
   }
 
+  const toggleReminder=(id) => {
+     setTasks( tasks.map( (task) => task.id===id ? {...task,reminder:!task.reminder}: task
+    ))
+  }
+
   return (
     <div>
       <Header title='Task Tracker' taskNumber='5' />
-      <Tasks tasks={tasks} OnDelete={deleteTask} />
+      <Tasks tasks={tasks} OnDelete={deleteTask}  OnToggle={toggleReminder} />
     </div>
   )
 }
